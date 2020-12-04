@@ -10,22 +10,24 @@ import UIKit
 class TrailerViewController: UIViewController {
     
     var trailer: Trailer!
-
+    @IBOutlet weak var ivPoster: UIImageView!
+    @IBOutlet weak var lbTitle: UILabel!
+    @IBOutlet weak var lbYear: UILabel!
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        loadTrailer()
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    func loadTrailer() {
+        ivPoster.image = UIImage(named: "\(trailer.poster)")
+        lbTitle.text = trailer.title
+        lbYear.text = "Lançado em \(trailer.year)"
     }
-    */
-
+    
+    @IBAction func back(_ sender: UIButton) {
+        dismiss(animated: true, completion: nil)
+    }
 }

@@ -127,16 +127,19 @@
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Voltar" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bNe-Zi-efH">
-                                <rect key="frame" x="787" y="372" width="45" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" red="0.73725490199999999" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="h8W-DO-ZjG">
-                                <rect key="frame" x="337.5" y="89" width="494.5" height="273"/>
+                                <rect key="frame" x="337.5" y="89" width="494.5" height="264"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FPg-9d-Sbd">
+                                <rect key="frame" x="791" y="363" width="41" height="30"/>
+                                <state key="normal" title="Voltar">
+                                    <color key="titleColor" red="0.73725490199999999" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="back:" destination="X6P-Xo-1gp" eventType="touchUpInside" id="6nW-4g-hA8"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="j3E-jG-Wyr"/>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -145,22 +148,27 @@
                             <constraint firstItem="h8W-DO-ZjG" firstAttribute="top" secondItem="dgX-TQ-S9b" secondAttribute="bottom" constant="10" id="2xS-KR-J7l"/>
                             <constraint firstItem="j3E-jG-Wyr" firstAttribute="trailing" secondItem="KiE-Rt-EDy" secondAttribute="trailing" constant="14" id="5qy-Gu-M7x"/>
                             <constraint firstItem="dgX-TQ-S9b" firstAttribute="top" secondItem="KiE-Rt-EDy" secondAttribute="bottom" constant="6" id="64y-12-cwo"/>
+                            <constraint firstItem="FPg-9d-Sbd" firstAttribute="top" secondItem="h8W-DO-ZjG" secondAttribute="bottom" constant="10" id="6Lf-Ze-3fV"/>
                             <constraint firstItem="j3E-jG-Wyr" firstAttribute="trailing" secondItem="h8W-DO-ZjG" secondAttribute="trailing" constant="20" id="Csx-Y1-OdG"/>
                             <constraint firstItem="paG-uC-5Rb" firstAttribute="top" secondItem="j3E-jG-Wyr" secondAttribute="top" id="FPC-Ut-TGE"/>
-                            <constraint firstItem="bNe-Zi-efH" firstAttribute="bottom" secondItem="j3E-jG-Wyr" secondAttribute="bottom" id="KjQ-cp-JUI"/>
                             <constraint firstItem="KiE-Rt-EDy" firstAttribute="leading" secondItem="paG-uC-5Rb" secondAttribute="trailing" constant="14" id="ROU-sz-k9v"/>
+                            <constraint firstItem="j3E-jG-Wyr" firstAttribute="trailing" secondItem="FPg-9d-Sbd" secondAttribute="trailing" constant="20" id="Umw-bh-F73"/>
                             <constraint firstItem="F3a-eW-wBu" firstAttribute="leading" secondItem="dgX-TQ-S9b" secondAttribute="trailing" constant="20" id="VFI-2K-8Zb"/>
                             <constraint firstItem="h8W-DO-ZjG" firstAttribute="leading" secondItem="dgX-TQ-S9b" secondAttribute="leading" id="W9C-mr-ETb"/>
                             <constraint firstItem="dgX-TQ-S9b" firstAttribute="leading" secondItem="paG-uC-5Rb" secondAttribute="trailing" constant="14" id="dSf-ql-jXk"/>
-                            <constraint firstItem="j3E-jG-Wyr" firstAttribute="trailing" secondItem="bNe-Zi-efH" secondAttribute="trailing" constant="20" id="ewJ-pD-fby"/>
                             <constraint firstAttribute="bottom" secondItem="paG-uC-5Rb" secondAttribute="bottom" id="hU1-DG-ORV"/>
-                            <constraint firstItem="bNe-Zi-efH" firstAttribute="top" secondItem="h8W-DO-ZjG" secondAttribute="bottom" constant="10" id="hxH-hR-QH6"/>
+                            <constraint firstItem="FPg-9d-Sbd" firstAttribute="bottom" secondItem="j3E-jG-Wyr" secondAttribute="bottom" id="l1c-gF-FO1"/>
                             <constraint firstItem="KiE-Rt-EDy" firstAttribute="top" secondItem="j3E-jG-Wyr" secondAttribute="top" constant="20" id="pHD-8e-gUG"/>
                             <constraint firstItem="F3a-eW-wBu" firstAttribute="top" secondItem="dgX-TQ-S9b" secondAttribute="top" id="rj2-Y3-ihg"/>
                             <constraint firstItem="paG-uC-5Rb" firstAttribute="leading" secondItem="j3E-jG-Wyr" secondAttribute="leading" id="ty2-9M-KnQ"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="9et-c9-ZbI"/>
+                    <connections>
+                        <outlet property="ivPoster" destination="paG-uC-5Rb" id="vrb-fm-RBq"/>
+                        <outlet property="lbTitle" destination="KiE-Rt-EDy" id="Vvb-e2-5do"/>
+                        <outlet property="lbYear" destination="dgX-TQ-S9b" id="uyp-DX-24Q"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kTF-Uj-4a5" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
