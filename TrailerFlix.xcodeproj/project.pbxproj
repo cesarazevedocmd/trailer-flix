@@ -13,6 +13,7 @@
 		8D0097BD257AAEF500E69AA0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8D0097BB257AAEF500E69AA0 /* Main.storyboard */; };
 		8D0097BF257AAEF800E69AA0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8D0097BE257AAEF800E69AA0 /* Assets.xcassets */; };
 		8D0097C2257AAEF800E69AA0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8D0097C0257AAEF800E69AA0 /* LaunchScreen.storyboard */; };
+		8D0097CB257AB02A00E69AA0 /* trailers.json in Resources */ = {isa = PBXBuildFile; fileRef = 8D0097CA257AB02A00E69AA0 /* trailers.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		8D0097BE257AAEF800E69AA0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8D0097C1257AAEF800E69AA0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8D0097C3257AAEF800E69AA0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8D0097CA257AB02A00E69AA0 /* trailers.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = trailers.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +59,7 @@
 			isa = PBXGroup;
 			children = (
 				8D0097B5257AAEF500E69AA0 /* AppDelegate.swift */,
+				8D0097CA257AB02A00E69AA0 /* trailers.json */,
 				8D0097B7257AAEF500E69AA0 /* SceneDelegate.swift */,
 				8D0097B9257AAEF500E69AA0 /* ViewController.swift */,
 				8D0097BB257AAEF500E69AA0 /* Main.storyboard */,
@@ -127,6 +130,7 @@
 				8D0097C2257AAEF800E69AA0 /* LaunchScreen.storyboard in Resources */,
 				8D0097BF257AAEF800E69AA0 /* Assets.xcassets in Resources */,
 				8D0097BD257AAEF500E69AA0 /* Main.storyboard in Resources */,
+				8D0097CB257AB02A00E69AA0 /* trailers.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
