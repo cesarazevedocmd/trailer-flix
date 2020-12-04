@@ -14,6 +14,9 @@
 		8D0097BF257AAEF800E69AA0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8D0097BE257AAEF800E69AA0 /* Assets.xcassets */; };
 		8D0097C2257AAEF800E69AA0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8D0097C0257AAEF800E69AA0 /* LaunchScreen.storyboard */; };
 		8D0097CB257AB02A00E69AA0 /* trailers.json in Resources */ = {isa = PBXBuildFile; fileRef = 8D0097CA257AB02A00E69AA0 /* trailers.json */; };
+		8D0097CE257AD18000E69AA0 /* TrailerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D0097CD257AD18000E69AA0 /* TrailerViewController.swift */; };
+		8D0097D2257AD1C100E69AA0 /* TrailersManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D0097D1257AD1C100E69AA0 /* TrailersManager.swift */; };
+		8D0097D5257AD28900E69AA0 /* Trailer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D0097D4257AD28900E69AA0 /* Trailer.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +29,9 @@
 		8D0097C1257AAEF800E69AA0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8D0097C3257AAEF800E69AA0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8D0097CA257AB02A00E69AA0 /* trailers.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = trailers.json; sourceTree = "<group>"; };
+		8D0097CD257AD18000E69AA0 /* TrailerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrailerViewController.swift; sourceTree = "<group>"; };
+		8D0097D1257AD1C100E69AA0 /* TrailersManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrailersManager.swift; sourceTree = "<group>"; };
+		8D0097D4257AD28900E69AA0 /* Trailer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Trailer.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,8 +66,11 @@
 			children = (
 				8D0097B5257AAEF500E69AA0 /* AppDelegate.swift */,
 				8D0097CA257AB02A00E69AA0 /* trailers.json */,
+				8D0097D1257AD1C100E69AA0 /* TrailersManager.swift */,
+				8D0097D4257AD28900E69AA0 /* Trailer.swift */,
 				8D0097B7257AAEF500E69AA0 /* SceneDelegate.swift */,
 				8D0097B9257AAEF500E69AA0 /* ViewController.swift */,
+				8D0097CD257AD18000E69AA0 /* TrailerViewController.swift */,
 				8D0097BB257AAEF500E69AA0 /* Main.storyboard */,
 				8D0097BE257AAEF800E69AA0 /* Assets.xcassets */,
 				8D0097C0257AAEF800E69AA0 /* LaunchScreen.storyboard */,
@@ -141,9 +150,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8D0097CE257AD18000E69AA0 /* TrailerViewController.swift in Sources */,
+				8D0097D5257AD28900E69AA0 /* Trailer.swift in Sources */,
 				8D0097BA257AAEF500E69AA0 /* ViewController.swift in Sources */,
 				8D0097B6257AAEF500E69AA0 /* AppDelegate.swift in Sources */,
 				8D0097B8257AAEF500E69AA0 /* SceneDelegate.swift in Sources */,
+				8D0097D2257AD1C100E69AA0 /* TrailersManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
