@@ -10,8 +10,6 @@ import UIKit
 class ViewController: UIViewController {
     
     let trailersManager = TrailersManager.share
-    var trailerToPlay: Trailer!
-    
     
     @IBOutlet weak var tvTrailers: UITableView!
     
@@ -24,7 +22,9 @@ class ViewController: UIViewController {
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if let vc = segue.destination as? TrailerViewController {
-            vc.trailer = trailerToPlay
+            if let trailer = sender as? Trailer {
+                vc.trailer = trailer
+            }
         }
     }
     
@@ -34,8 +34,7 @@ class ViewController: UIViewController {
     
     
     func showTrailer(with trailer: Trailer){
-        trailerToPlay = trailer
-        performSegue(withIdentifier: "trailerSegue", sender: nil)
+        performSegue(withIdentifier: "trailerSegue", sender: trailer)
     }
 }
 
@@ -50,6 +49,7 @@ extension ViewController: UITableViewDelegate, UITableViewDataSource{
         let trailer = trailersManager.getTrailer(indexPath.row)
         cell.textLabel?.text = trailer.title
         cell.detailTextLabel?.text = String(trailer.year)
+        cell.imageView?.image = UIImage(named: "\(trailer.poster)")
         
         return cell
     }
